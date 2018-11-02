@@ -74,6 +74,12 @@
   <ItemGroup>
     <EmbeddedResource Include="goodtrades.txt" />
   </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="negative.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="maximum.txt" />
+  </ItemGroup>
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">
       <ItemGroup>

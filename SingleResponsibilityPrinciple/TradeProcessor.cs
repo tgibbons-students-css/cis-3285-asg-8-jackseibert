@@ -61,6 +61,12 @@ namespace SingleResponsibilityPrinciple
                 return false;
             }
 
+            if (fields[1].Length != 7)
+            {
+                LogMessage("WARN: Trade amount is too high.", currentLine, fields[1]);
+                return false;
+            }
+
             int tradeAmount;
             if (!int.TryParse(fields[1], out tradeAmount))
             {
